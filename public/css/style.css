@@ -32,6 +32,8 @@ body {
 }
 .input {
     border: 1px solid lightgray;
+    outline: none; /*選択時のアウトラインが消える*/
+    appearance: none; /*よくわからん*/
 }
 
 .input-create {
@@ -43,9 +45,11 @@ body {
     font-weight: bold;
     background-color: white;
     border-radius: 5px;
-    height: 37px;
-    width: 60px;
+    /* height: 37px; サイズ指定をheight,widthでするのでなく、paddingをうまく利用する*/
+    /* width: 60px; */
     transition: 0.3s;
+    padding: 8px 16px; /*追記*/
+    cursor: pointer; /*追記*/
 }
 
 .create_btn {
@@ -67,11 +71,11 @@ table {
 }
 
 .created_at {
-    width: 40%;
+    /* width: 40%; */
 }
 
 .tasks {
-    width: 35%;
+    /* width: 35%; */
 }
 
 .input-update {
